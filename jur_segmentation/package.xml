@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>jur_segmentation</name>
+    <version>0.0.1</version>
+    <description>
+        A tool for image segmenation and evalution the result.
+    </description>
+
+    <maintainer email="v.azizi@jacobs-university.de">Vahid Azizi</maintainer>
+    <author     email="v.azizi@jacobs-university.de">Vahid Azizi</author>
+    <url        type="website">http://robotics.jacobs-university.de/</url>
+
+    <license>BSD</license>
+
+    <!-- <url type="repository">https://github.com/</url> -->
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <run_depend>jur_gui_segmentation</run_depend>
+    <run_depend>jur_opencv_segmentation</run_depend>
+
+    <export>
+        <metapackage />
+    </export>
+</package>

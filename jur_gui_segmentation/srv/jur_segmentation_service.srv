@@ -1,0 +1,8 @@
+string reqstr
+sensor_msgs/Image reqimg
+int64 reqparm1
+int64 reqparm2
+int64 reqparm3
+---
+sensor_msgs/Image resimg
+

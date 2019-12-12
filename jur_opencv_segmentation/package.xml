@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+    <name>jur_opencv_segmentation</name>
+    <version>0.0.1</version>
+    <description>
+        This package contains some built-in OpenCV's methods for segmentation.
+    </description>
+
+    <maintainer email="v.azizi@jacobs-university.de">Vahid Azizi</maintainer>
+    <author     email="v.azizi@jacobs-university.de">Vahid Azizi</author>
+    <url        type="website">http://robotics.jacobs-university.de/</url>
+
+    <license>BSD</license>
+
+    <!-- <url type="repository">https://github.com/</url> -->
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>roscpp</build_depend>
+    <build_depend>cv_bridge</build_depend>
+    <build_depend>jur_gui_segmentation</build_depend>
+
+    <run_depend>roscpp</run_depend>
+    <run_depend>cv_bridge</run_depend>
+    <run_depend>jur_gui_segmentation</run_depend>
+
+    <export></export>
+</package>

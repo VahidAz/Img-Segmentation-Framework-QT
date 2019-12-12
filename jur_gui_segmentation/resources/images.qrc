@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>images/img_no_image.jpg</file>
+        <file>images/img_splash.jpg</file>
+        <file>images/img_2d.jpg</file>
+        <file>images/img_3d.jpg</file>
+    </qresource>
+    <qresource prefix="/Icons">
+        <file>images/ico_next.png</file>
+        <file>images/ico_previous.png</file>
+        <file>images/ico_zoom_in.png</file>
+        <file>images/ico_zoom_out.png</file>
+        <file>images/ico_fit.png</file>
+        <file>images/ico_norm_size.png</file>
+        <file>images/ico_robotic_jacobs.ico</file>
+        <file>images/ico_quit.png</file>
+        <file>images/ico_about.jpg</file>
+        <file>images/ico_load.png</file>
+        <file>images/ico_reset.png</file>
+        <file>images/ico_color_pallate.png</file>
+        <file>images/ico_compare.png</file>
+        <file>images/ico_opencv.png</file>
+        <file>images/ico_delete.png</file>
+        <file>images/ico_setting.jpeg</file>
+        <file>images/ico_clear.png</file>
+        <file>images/ico_seg.png</file>
+        <file>images/ico_close.png</file>
+        <file>images/ico_apply.png</file>
+        <file>images/ico_back.png</file>
+        <file>images/ico_expriment.png</file>
+        <file>images/ico_save.png</file>
+    </qresource>
+</RCC>

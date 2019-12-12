@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JURGUI::JURGUI2DWindow</class>
+ <widget class="QMainWindow" name="JURGUI::JURGUI2DWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1294</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_12">
+    <item>
+     <widget class="QSplitter" name="splitter_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QSplitter" name="splitter_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QSplitter" name="splitter_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="JURGUISubClassQGV" name="gV">
+          <property name="minimumSize">
+           <size>
+            <width>430</width>
+            <height>361</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QListWidget" name="lstPol"/>
+        </widget>
+        <widget class="QGraphicsView" name="gVROS"/>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QListWidget" name="lstV">
+             <property name="resizeMode">
+              <enum>QListView::Adjust</enum>
+             </property>
+             <property name="spacing">
+              <number>1</number>
+             </property>
+             <property name="viewMode">
+              <enum>QListView::ListMode</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QCheckBox" name="chBox_load_train">
+                 <property name="text">
+                  <string>Train data</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="chBox_sample">
+                 <property name="text">
+                  <string>Our Samples</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_load">
+               <property name="minimumSize">
+                <size>
+                 <width>54</width>
+                 <height>42</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Load Images</string>
+               </property>
+               <property name="statusTip">
+                <string>Load Images</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_load.png</normaloff>:/Icons/images/ico_load.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_previous">
+               <property name="minimumSize">
+                <size>
+                 <width>54</width>
+                 <height>42</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Previous</string>
+               </property>
+               <property name="statusTip">
+                <string>Previous</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_previous.png</normaloff>:/Icons/images/ico_previous.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_next">
+               <property name="minimumSize">
+                <size>
+                 <width>54</width>
+                 <height>42</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Next</string>
+               </property>
+               <property name="statusTip">
+                <string>Next</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_next.png</normaloff>:/Icons/images/ico_next.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>Size:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="sBox_size">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_color">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_color_pallate.png</normaloff>:/Icons/images/ico_color_pallate.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QPushButton" name="pBtn_zoom_in">
+               <property name="minimumSize">
+                <size>
+                 <width>31</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Zoom In</string>
+               </property>
+               <property name="statusTip">
+                <string>Zoom In</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_zoom_in.png</normaloff>:/Icons/images/ico_zoom_in.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_zoom_out">
+               <property name="minimumSize">
+                <size>
+                 <width>31</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Zoom Out</string>
+               </property>
+               <property name="statusTip">
+                <string>Zoom Out</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_zoom_out.png</normaloff>:/Icons/images/ico_zoom_out.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_fit">
+               <property name="toolTip">
+                <string>Fit</string>
+               </property>
+               <property name="statusTip">
+                <string>Fit</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_fit.png</normaloff>:/Icons/images/ico_fit.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QPushButton" name="pBtn_train_seg">
+               <property name="toolTip">
+                <string>Show Segmented Image</string>
+               </property>
+               <property name="statusTip">
+                <string>Show Segmented Image</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_seg.png</normaloff>:/Icons/images/ico_seg.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_extract">
+               <property name="toolTip">
+                <string>Extract</string>
+               </property>
+               <property name="statusTip">
+                <string>Extract</string>
+               </property>
+               <property name="whatsThis">
+                <string/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_apply.png</normaloff>:/Icons/images/ico_apply.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QRadioButton" name="rdBtnMean">
+                 <property name="toolTip">
+                  <string>MeanShift</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>MeanShift</string>
+                 </property>
+                 <property name="text">
+                  <string>MeanShift</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="rdBtnWatershed">
+                 <property name="toolTip">
+                  <string>Watershed</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Watershed</string>
+                 </property>
+                 <property name="text">
+                  <string>Watershed</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_setting">
+               <property name="toolTip">
+                <string>Setting</string>
+               </property>
+               <property name="statusTip">
+                <string>Setting</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_setting.jpeg</normaloff>:/Icons/images/ico_setting.jpeg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_req">
+               <property name="toolTip">
+                <string>Send</string>
+               </property>
+               <property name="statusTip">
+                <string>Send</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_opencv.png</normaloff>:/Icons/images/ico_opencv.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QCheckBox" name="chBox_sanity">
+               <property name="text">
+                <string>Sanity Check</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comBox_sel_methods">
+               <property name="toolTip">
+                <string>Select Methods</string>
+               </property>
+               <property name="statusTip">
+                <string>Select Methods</string>
+               </property>
+               <property name="modelColumn">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_eval">
+               <property name="toolTip">
+                <string>Evaluate</string>
+               </property>
+               <property name="statusTip">
+                <string>Evaluate</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_compare.png</normaloff>:/Icons/images/ico_compare.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_expr">
+               <property name="toolTip">
+                <string>Expriment</string>
+               </property>
+               <property name="statusTip">
+                <string>Expriment</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_expriment.png</normaloff>:/Icons/images/ico_expriment.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="pBtn_back">
+               <property name="toolTip">
+                <string>Back</string>
+               </property>
+               <property name="statusTip">
+                <string>Back</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_back.png</normaloff>:/Icons/images/ico_back.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pBtn_quit">
+               <property name="toolTip">
+                <string>Exit</string>
+               </property>
+               <property name="statusTip">
+                <string>Exit</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/images.qrc">
+                 <normaloff>:/Icons/images/ico_quit.png</normaloff>:/Icons/images/ico_quit.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="layoutWidget1">
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QPlainTextEdit" name="pTE_log">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pBtn_clear">
+            <property name="toolTip">
+             <string>Clear</string>
+            </property>
+            <property name="statusTip">
+             <string>Clear</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources/images.qrc">
+              <normaloff>:/Icons/images/ico_clear.png</normaloff>:/Icons/images/ico_clear.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1294</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>JURGUISubClassQGV</class>
+   <extends>QGraphicsView</extends>
+   <header>JURGUISubClassQGV.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resources/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

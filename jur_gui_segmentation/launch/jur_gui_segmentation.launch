@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="jur_gui_segmentation"    name="jur_gui_segmentation"         type="jur_gui_segmentation"         required="true" />
+        <node pkg="jur_opencv_segmentation" name="jur_opencv_segmentation_node" type="jur_opencv_segmentation_node" />
+</launch>
