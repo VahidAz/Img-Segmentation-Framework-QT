@@ -1,3 +1,3 @@
-# Img-Segmentation-Framework-QT
+# Image segmentation/annotation framework
 
-ROS(catkin) GUI for image annotation(QT, OpenCV)
+ROS(catkin) package for image segmentation/annotation(QT, OpenCV)
